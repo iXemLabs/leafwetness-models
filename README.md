@@ -1,7 +1,6 @@
 # Agrometeorological Leaf Wetness Prediction
 
- [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-
+[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![IEEE Paper](https://img.shields.io/badge/DOI-10.1109%2FTAFE.2026.3711283-blue)](https://doi.org/10.1109/TAFE.2026.3711283)
 
 This repository provides pre-trained Machine Learning models exported to **ONNX (Open Neural Network Exchange)** format for predicting leaf wetness status (**Dry / Wet**) using only agrometeorological parameters.
@@ -20,7 +19,7 @@ All models expect exactly **8 input parameters** passed in the following order:
 | `3` | `rh` | Relative Humidity | % |
 | `4` | `rain` | Rainfall / Precipitation | mm |
 | `5` | `wind_speed` | Wind Speed | m/s |
-| `6` | `doy` | Day of Year | Integer (1–366) |
+| `6` | `doy` | Day of Year | Integer (1–365) |
 | `7` | `hour` | Hour of Day | Integer (0–23) |
 
 ### Output Target Format
