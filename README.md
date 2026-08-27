@@ -34,13 +34,13 @@ The pre-trained models are hosted in the [`models/`](./models/) directory.
 |---|---|---|:---:|
 | Top | Random Forest | [`rf_lw_top.onnx`](./models/rf_lw_top.onnx) | *0.92* |
 | Bottom | Random Forest | [`rf_lw_bottom.onnx`](./models/rf_lw_bottom.onnx) | *0.94* |
+| Top | SVM | [`svm_lw_top.onnx`](./models/svm_lw_top.onnx) | *0.90* |
+| Bottom | SVM | [`svm_lw_bottom.onnx`](./models/svm_lw_bottom.onnx) | *0.89* |
 
 ## Repository Layout
 
 ```text
-├── models/
-│   ├── rf_lw_top.onnx         # Random Forest - Top Leaf Surface
-│   └── rf_lw_bottom.onnx      # Random Forest - Bottom Leaf Surface
+├── models/                    # Available models
 ├── scripts/
 │   └── predict.py             # Standalone ONNX inference CLI script
 ├── sample_data/
