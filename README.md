@@ -1,4 +1,4 @@
-# Agrometeorological Leaf Wetness Prediction
+# Leaf Wetness Prediction Models
 
 [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![IEEE Paper](https://img.shields.io/badge/DOI-10.1109%2FTAFE.2026.3711283-blue)](https://doi.org/10.1109/TAFE.2026.3711283)
@@ -26,6 +26,15 @@ All models expect exactly **8 input parameters** passed in the following order:
 * **`0` = Dry**
 * **`1` = Wet**
 
+## Available Models
+
+The pre-trained models are hosted in the [`models/`](./models/) directory.
+
+| Leaf Side | Model | Filename | Balanced Accuracy |
+|---|---|---|:---:|
+| Top | Random Forest | [`rf_lw_top.onnx`](./models/rf_lw_top.onnx) | *0.92* |
+| Bottom | Random Forest | [`rf_lw_bottom.onnx`](./models/rf_lw_bottom.onnx) | *0.94* |
+
 ## Repository Layout
 
 ```text
@@ -37,7 +46,7 @@ All models expect exactly **8 input parameters** passed in the following order:
 ├── sample_data/
 │   └── sample_input.csv       # Example CSV input for quick testing
 ├── LICENSE
-├── requirements.txt           # Minimal dependencies (onnxruntime, pandas, numpy)
+├── requirements.txt
 └── README.md
 ```
 
